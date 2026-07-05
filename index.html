@@ -1,145 +1,196 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>โปรแกรมแปลงเลขฐาน</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 30px;
+        }
+
+        h1{
+            text-align: center;
+            color: #333;
+        }
+
+        .box{
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 900px;
+            margin: auto;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        pre{
+            background: #222;
+            color: #00ff88;
+            padding: 15px;
+            border-radius: 10px;
+            overflow-x: auto;
+            font-size: 14px;
+        }
+
+        .name{
+            text-align: center;
+            margin-top: 20px;
+            font-weight: bold;
+            color: #444;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+
+        <h1>โปรแกรมแปลงเลขฐานด้วย Python</h1>
+
+<pre>
 # ======================
 # 10 -> 2
 # ======================
 
-dec = 1234  # เลขฐาน10
+dec = 1234
 
-conv_to = bin(dec)  # แปลงเลขฐาน10 to 2
-dec = conv_to
+conv_to = bin(dec)
 
-print("10 to 2 =", dec)
+print("10 to 2 =", conv_to)
 
 
 # ======================
 # 10 -> 8
 # ======================
 
-dec2 = 1234  # เลขฐาน10
+dec2 = 1234
 
-conv_to2 = oct(dec2)  # แปลงเลขฐาน10 to 8
-dec2 = conv_to2
+conv_to2 = oct(dec2)
 
-print("10 to 8 =", dec2)
+print("10 to 8 =", conv_to2)
 
 
 # ======================
 # 10 -> 16
 # ======================
 
-dec3 = 1234  # เลขฐาน10
+dec3 = 1234
 
-conv_to3 = hex(dec3)  # แปลงเลขฐาน10 to 16
-dec3 = conv_to3
+conv_to3 = hex(dec3)
 
-print("10 to 16 =", dec3)
+print("10 to 16 =", conv_to3)
 
 
 # ======================
 # 2 -> 10
 # ======================
 
-bin_num = "11111000111"  # เลขฐาน2
+bin_num = "11111000111"
 
-conv_to4 = int(bin_num, 2)  # แปลงเลขฐาน2 to 10
-bin_num = conv_to4
+conv_to4 = int(bin_num, 2)
 
-print("2 to 10 =", bin_num)
+print("2 to 10 =", conv_to4)
 
 
 # ======================
 # 2 -> 8
 # ======================
 
-bin_num2 = "11111000111"  # เลขฐาน2
+bin_num2 = "11111000111"
 
-conv_to5 = oct(int(bin_num2, 2))  # แปลงเลขฐาน2 to 8
-bin_num2 = conv_to5
+conv_to5 = oct(int(bin_num2, 2))
 
-print("2 to 8 =", bin_num2)
+print("2 to 8 =", conv_to5)
 
 
 # ======================
 # 2 -> 16
 # ======================
 
-bin_num3 = "11111000111"  # เลขฐาน2
+bin_num3 = "11111000111"
 
-conv_to6 = hex(int(bin_num3, 2))  # แปลงเลขฐาน2 to 16
-bin_num3 = conv_to6
+conv_to6 = hex(int(bin_num3, 2))
 
-print("2 to 16 =", bin_num3)
+print("2 to 16 =", conv_to6)
 
 
 # ======================
 # 8 -> 10
 # ======================
 
-oct_num = "3707"  # เลขฐาน8
+oct_num = "3707"
 
-conv_to7 = int(oct_num, 8)  # แปลงเลขฐาน8 to 10
-oct_num = conv_to7
+conv_to7 = int(oct_num, 😎
 
-print("8 to 10 =", oct_num)
+print("8 to 10 =", conv_to7)
 
 
 # ======================
 # 8 -> 2
 # ======================
 
-oct_num2 = "3707"  # เลขฐาน8
+oct_num2 = "3707"
 
-conv_to8 = bin(int(oct_num2, 8))  # แปลงเลขฐาน8 to 2
-oct_num2 = conv_to8
+conv_to8 = bin(int(oct_num2, 8))
 
-print("8 to 2 =", oct_num2)
+print("8 to 2 =", conv_to8)
 
 
 # ======================
 # 8 -> 16
 # ======================
 
-oct_num3 = "3707"  # เลขฐาน8
+oct_num3 = "3707"
 
-conv_to9 = hex(int(oct_num3, 8))  # แปลงเลขฐาน8 to 16
-oct_num3 = conv_to9
+conv_to9 = hex(int(oct_num3, 8))
 
-print("8 to 16 =", oct_num3)
+print("8 to 16 =", conv_to9)
 
 
 # ======================
 # 16 -> 10
 # ======================
 
-hex_num = "7c7"  # เลขฐาน16
+hex_num = "7c7"
 
-conv_to10 = int(hex_num, 16)  # แปลงเลขฐาน16 to 10
-hex_num = conv_to10
+conv_to10 = int(hex_num, 16)
 
-print("16 to 10 =", hex_num)
+print("16 to 10 =", conv_to10)
 
 
 # ======================
 # 16 -> 2
 # ======================
 
-hex_num2 = "7c7"  # เลขฐาน16
+hex_num2 = "7c7"
 
-conv_to11 = bin(int(hex_num2, 16))  # แปลงเลขฐาน16 to 2
-hex_num2 = conv_to11
+conv_to11 = bin(int(hex_num2, 16))
 
-print("16 to 2 =", hex_num2)
+print("16 to 2 =", conv_to11)
 
 
 # ======================
 # 16 -> 8
 # ======================
 
-hex_num3 = "7c7"  # เลขฐาน16
+hex_num3 = "7c7"
 
-conv_to12 = oct(int(hex_num3, 16))  # แปลงเลขฐาน16 to 8
-hex_num3 = conv_to12
+conv_to12 = oct(int(hex_num3, 16))
 
-print("16 to 8 =", hex_num3)
+print("16 to 8 =", conv_to12)
 
 
-print("วศิน คําธัญญา")
+print("วศิน คำธัญญา")
+</pre>
+
+        <div class="name">
+            ผู้จัดทำ: วศิน คำธัญญา
+        </div>
+
+    </div>
+
+</body>
+</html>
